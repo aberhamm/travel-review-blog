@@ -1,0 +1,9 @@
+#app.v-application {
+    background-color: #f4f7f6 !important;
+
+    // Components
+    .v-card__text,
+    .v-card__title {
+        word-break: normal!important;
+    }
+}

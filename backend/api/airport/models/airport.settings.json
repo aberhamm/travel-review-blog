@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airports",
+  "info": {
+    "name": "Airport"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "iata_code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "lounges": {
+      "via": "airport",
+      "collection": "lounge"
+    },
+    "location": {
+      "via": "airports",
+      "model": "location"
+    },
+    "flights": {
+      "via": "destination",
+      "collection": "flight"
+    }
+  }
+}

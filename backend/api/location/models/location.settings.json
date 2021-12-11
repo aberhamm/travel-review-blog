@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "Location"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "airports": {
+      "collection": "airport",
+      "via": "location"
+    }
+  }
+}

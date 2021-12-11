@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/flight-classes",
+      "handler": "flight-class.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flight-classes/count",
+      "handler": "flight-class.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/flight-classes/:id",
+      "handler": "flight-class.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/flight-classes",
+      "handler": "flight-class.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/flight-classes/:id",
+      "handler": "flight-class.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/flight-classes/:id",
+      "handler": "flight-class.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

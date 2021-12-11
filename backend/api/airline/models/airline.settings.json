@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airlines",
+  "info": {
+    "name": "Airline",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

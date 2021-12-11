@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lounges",
+  "info": {
+    "name": "Lounge",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "airport": {
+      "model": "airport",
+      "via": "lounges"
+    },
+    "terminal": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+query Posts {
+    posts {
+        id
+        slug
+        title
+        subtitle
+    	category
+        content
+        featured_image {
+            url
+        }
+    	published_at
+    }
+}

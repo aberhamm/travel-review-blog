@@ -1,0 +1,6 @@
+query Header {
+    header {
+        title
+        navigation_links
+    }
+}
