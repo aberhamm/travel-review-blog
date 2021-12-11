@@ -5,7 +5,7 @@ query Posts {
         title
         subtitle
     	category
-        content
+        # content
         featured_image {
             url
         }
