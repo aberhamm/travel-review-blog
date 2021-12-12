@@ -8,10 +8,10 @@
         nuxt
         custom>
         <base-image
-            v-if="post.featured_image"
+            v-if="post.thumbnail_image"
             class="white--text text-right"
             height="200px"
-            :src="post.featured_image.url">
+            :src="post.thumbnail_image.url">
             <v-chip
                 label
                 class="ma-2 mb-2 text-uppercase"

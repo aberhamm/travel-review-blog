@@ -9,6 +9,9 @@ query Posts {
         featured_image {
             url
         }
+        thumbnail_image {
+            url
+        }
     	published_at
     }
 }
