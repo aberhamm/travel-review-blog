@@ -14,5 +14,5 @@ $ yarn run build
 $ yarn run start
 
 # build for production on Heroku
-$ git subtree push --prefix backend  heroku master
+$ git subtree push --prefix backend heroku master
 ```
