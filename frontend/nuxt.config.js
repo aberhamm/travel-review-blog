@@ -1,6 +1,6 @@
 import redirectMiddleware from './server-middleware/redirect';
 
-const strapiBaseUri = 'http://api.economyanxiety.com/'//process.env.API_URL || 'http://localhost:8082';
+const strapiBaseUri = process.env.API_URL || 'http://localhost:8082';
 
 export default {
     target: 'static',
