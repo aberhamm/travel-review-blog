@@ -1,9 +1,10 @@
 import redirectMiddleware from './server-middleware/redirect';
 
-const strapiBaseUri = process.env.API_URL || 'http://localhost:8082';
+const strapiBaseUri = 'http://api.economyanxiety.com/'//process.env.API_URL || 'http://localhost:8082';
 
 export default {
     target: 'static',
+    mode: 'spa',
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
         // https://go.nuxtjs.dev/vuetify
