@@ -78,8 +78,7 @@ export default {
     apollo: {
         clientConfigs: {
             default: {
-                httpEndpoint:
-                    process.env.BACKEND_URL || 'http://localhost:8082/graphql',
+                httpEndpoint: strapiBaseUri + '/graphql'
             },
         },
         /**
