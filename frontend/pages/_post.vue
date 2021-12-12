@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import postsQuery from '~/apollo/queries/post/posts';
+import postsQuery from '~/apollo/queries/post/post';
 
 export default {
     data: () => ({

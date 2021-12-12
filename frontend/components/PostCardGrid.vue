@@ -27,7 +27,7 @@ export default {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-
+    gap: 1em;
     @media (min-width: 600px) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }

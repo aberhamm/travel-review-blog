@@ -4,12 +4,13 @@ const strapiBaseUri = process.env.API_URL || 'http://localhost:8082';
 
 export default {
     target: 'static',
-    mode: 'spa',
+    ssr: false,
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
         // https://go.nuxtjs.dev/vuetify
         '@nuxtjs/vuetify',
-        '@nuxtjs/moment'
+        '@nuxtjs/moment',
+        '@nuxtjs/google-analytics'
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -20,6 +21,9 @@ export default {
 
     env: {
         strapiBaseUri,
+    },
+    googleAnalytics: {
+        id: 'G-7KHGT7YHGG'
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
