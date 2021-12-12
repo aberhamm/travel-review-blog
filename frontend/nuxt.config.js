@@ -11,7 +11,7 @@ export default {
         // https://go.nuxtjs.dev/vuetify
         '@nuxtjs/vuetify',
         '@nuxtjs/moment',
-        '@nuxtjs/google-analytics'
+        '@nuxtjs/gtm'
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -23,13 +23,14 @@ export default {
     env: {
         strapiBaseUri,
     },
-    googleAnalytics: {
-        id: 'G-7KHGT7YHGG'
+    gtm: {
+        id: 'G-VQYDRXG4JT',
+        enabled: true
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: '%s - frontend',
-        title: 'frontend',
+        titleTemplate: '%s - economy anxiety',
+        title: 'economy anxiety - reviews for airlines, business class, lounge, hotels and more.',
         htmlAttrs: {
             lang: 'en',
         },
