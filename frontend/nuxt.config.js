@@ -1,6 +1,7 @@
 import redirectMiddleware from './server-middleware/redirect';
 
 const strapiBaseUri = process.env.API_URL || 'http://localhost:8082';
+const isProd = process.env.NODE_ENV === 'production';
 
 export default {
     target: 'static',
@@ -72,7 +73,9 @@ export default {
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
 
-    serverMiddleware: [redirectMiddleware({ strapiBaseUri })],
+    serverMiddleware: [
+        ...(isProd ? ['redirect-ssl'] : [])
+    ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
