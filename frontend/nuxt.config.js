@@ -11,7 +11,7 @@ export default {
         // https://go.nuxtjs.dev/vuetify
         '@nuxtjs/vuetify',
         '@nuxtjs/moment',
-        '@nuxtjs/gtm'
+        '@nuxtjs/google-gtag'
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -23,9 +23,9 @@ export default {
     env: {
         strapiBaseUri,
     },
-    gtm: {
+    'google-gtag': {
         id: 'G-VQYDRXG4JT',
-        enabled: true
+        debug: false,
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
