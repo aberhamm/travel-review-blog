@@ -1,0 +1,585 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "UNION",
+        "name": "Morph",
+        "possibleTypes": [
+          {
+            "name": "Airline"
+          },
+          {
+            "name": "AirlineAggregator"
+          },
+          {
+            "name": "AirlineConnection"
+          },
+          {
+            "name": "AirlineConnectionCode"
+          },
+          {
+            "name": "AirlineConnectionCreated_at"
+          },
+          {
+            "name": "AirlineConnectionId"
+          },
+          {
+            "name": "AirlineConnectionName"
+          },
+          {
+            "name": "AirlineConnectionPublished_at"
+          },
+          {
+            "name": "AirlineConnectionUpdated_at"
+          },
+          {
+            "name": "AirlineGroupBy"
+          },
+          {
+            "name": "Airport"
+          },
+          {
+            "name": "AirportAggregator"
+          },
+          {
+            "name": "AirportConnection"
+          },
+          {
+            "name": "AirportConnectionCreated_at"
+          },
+          {
+            "name": "AirportConnectionIata_code"
+          },
+          {
+            "name": "AirportConnectionId"
+          },
+          {
+            "name": "AirportConnectionLocation"
+          },
+          {
+            "name": "AirportConnectionName"
+          },
+          {
+            "name": "AirportConnectionPublished_at"
+          },
+          {
+            "name": "AirportConnectionUpdated_at"
+          },
+          {
+            "name": "AirportGroupBy"
+          },
+          {
+            "name": "ComponentPostCarousel"
+          },
+          {
+            "name": "ComponentPostContentBlock"
+          },
+          {
+            "name": "Flight"
+          },
+          {
+            "name": "FlightAggregator"
+          },
+          {
+            "name": "FlightClass"
+          },
+          {
+            "name": "FlightClassAggregator"
+          },
+          {
+            "name": "FlightClassConnection"
+          },
+          {
+            "name": "FlightClassConnectionCreated_at"
+          },
+          {
+            "name": "FlightClassConnectionId"
+          },
+          {
+            "name": "FlightClassConnectionName"
+          },
+          {
+            "name": "FlightClassConnectionPublished_at"
+          },
+          {
+            "name": "FlightClassConnectionUpdated_at"
+          },
+          {
+            "name": "FlightClassGroupBy"
+          },
+          {
+            "name": "FlightConnection"
+          },
+          {
+            "name": "FlightConnectionCreated_at"
+          },
+          {
+            "name": "FlightConnectionDestination"
+          },
+          {
+            "name": "FlightConnectionId"
+          },
+          {
+            "name": "FlightConnectionOrigin"
+          },
+          {
+            "name": "FlightConnectionPublished_at"
+          },
+          {
+            "name": "FlightConnectionTitle"
+          },
+          {
+            "name": "FlightConnectionUpdated_at"
+          },
+          {
+            "name": "FlightGroupBy"
+          },
+          {
+            "name": "Header"
+          },
+          {
+            "name": "I18NLocale"
+          },
+          {
+            "name": "Location"
+          },
+          {
+            "name": "LocationAggregator"
+          },
+          {
+            "name": "LocationConnection"
+          },
+          {
+            "name": "LocationConnectionCity"
+          },
+          {
+            "name": "LocationConnectionCountry"
+          },
+          {
+            "name": "LocationConnectionCreated_at"
+          },
+          {
+            "name": "LocationConnectionId"
+          },
+          {
+            "name": "LocationConnectionPublished_at"
+          },
+          {
+            "name": "LocationConnectionState"
+          },
+          {
+            "name": "LocationConnectionUpdated_at"
+          },
+          {
+            "name": "LocationGroupBy"
+          },
+          {
+            "name": "Lounge"
+          },
+          {
+            "name": "LoungeAggregator"
+          },
+          {
+            "name": "LoungeConnection"
+          },
+          {
+            "name": "LoungeConnectionAirport"
+          },
+          {
+            "name": "LoungeConnectionCreated_at"
+          },
+          {
+            "name": "LoungeConnectionId"
+          },
+          {
+            "name": "LoungeConnectionName"
+          },
+          {
+            "name": "LoungeConnectionPublished_at"
+          },
+          {
+            "name": "LoungeConnectionTerminal"
+          },
+          {
+            "name": "LoungeConnectionUpdated_at"
+          },
+          {
+            "name": "LoungeGroupBy"
+          },
+          {
+            "name": "MenuItem"
+          },
+          {
+            "name": "MenuItemAggregator"
+          },
+          {
+            "name": "MenuItemCategory"
+          },
+          {
+            "name": "MenuItemCategoryAggregator"
+          },
+          {
+            "name": "MenuItemCategoryConnection"
+          },
+          {
+            "name": "MenuItemCategoryConnectionCreated_at"
+          },
+          {
+            "name": "MenuItemCategoryConnectionId"
+          },
+          {
+            "name": "MenuItemCategoryConnectionName"
+          },
+          {
+            "name": "MenuItemCategoryConnectionPublished_at"
+          },
+          {
+            "name": "MenuItemCategoryConnectionUpdated_at"
+          },
+          {
+            "name": "MenuItemCategoryGroupBy"
+          },
+          {
+            "name": "MenuItemConnection"
+          },
+          {
+            "name": "MenuItemConnectionCreated_at"
+          },
+          {
+            "name": "MenuItemConnectionId"
+          },
+          {
+            "name": "MenuItemConnectionName"
+          },
+          {
+            "name": "MenuItemConnectionPublished_at"
+          },
+          {
+            "name": "MenuItemConnectionUpdated_at"
+          },
+          {
+            "name": "MenuItemGroupBy"
+          },
+          {
+            "name": "Posts"
+          },
+          {
+            "name": "PostsAggregator"
+          },
+          {
+            "name": "PostsConnection"
+          },
+          {
+            "name": "PostsConnectionCategory"
+          },
+          {
+            "name": "PostsConnectionCreated_at"
+          },
+          {
+            "name": "PostsConnectionFeatured_image"
+          },
+          {
+            "name": "PostsConnectionId"
+          },
+          {
+            "name": "PostsConnectionLounge"
+          },
+          {
+            "name": "PostsConnectionPublished_at"
+          },
+          {
+            "name": "PostsConnectionSlug"
+          },
+          {
+            "name": "PostsConnectionSubtitle"
+          },
+          {
+            "name": "PostsConnectionThumbnail_image"
+          },
+          {
+            "name": "PostsConnectionTitle"
+          },
+          {
+            "name": "PostsConnectionUpdated_at"
+          },
+          {
+            "name": "PostsGroupBy"
+          },
+          {
+            "name": "UploadFile"
+          },
+          {
+            "name": "UploadFileAggregator"
+          },
+          {
+            "name": "UploadFileAggregatorAvg"
+          },
+          {
+            "name": "UploadFileAggregatorMax"
+          },
+          {
+            "name": "UploadFileAggregatorMin"
+          },
+          {
+            "name": "UploadFileAggregatorSum"
+          },
+          {
+            "name": "UploadFileConnection"
+          },
+          {
+            "name": "UploadFileConnectionAlternativeText"
+          },
+          {
+            "name": "UploadFileConnectionCaption"
+          },
+          {
+            "name": "UploadFileConnectionCreated_at"
+          },
+          {
+            "name": "UploadFileConnectionExt"
+          },
+          {
+            "name": "UploadFileConnectionFormats"
+          },
+          {
+            "name": "UploadFileConnectionHash"
+          },
+          {
+            "name": "UploadFileConnectionHeight"
+          },
+          {
+            "name": "UploadFileConnectionId"
+          },
+          {
+            "name": "UploadFileConnectionMime"
+          },
+          {
+            "name": "UploadFileConnectionName"
+          },
+          {
+            "name": "UploadFileConnectionPreviewUrl"
+          },
+          {
+            "name": "UploadFileConnectionProvider"
+          },
+          {
+            "name": "UploadFileConnectionProvider_metadata"
+          },
+          {
+            "name": "UploadFileConnectionSize"
+          },
+          {
+            "name": "UploadFileConnectionUpdated_at"
+          },
+          {
+            "name": "UploadFileConnectionUrl"
+          },
+          {
+            "name": "UploadFileConnectionWidth"
+          },
+          {
+            "name": "UploadFileGroupBy"
+          },
+          {
+            "name": "UserPermissionsPasswordPayload"
+          },
+          {
+            "name": "UsersPermissionsLoginPayload"
+          },
+          {
+            "name": "UsersPermissionsMe"
+          },
+          {
+            "name": "UsersPermissionsMeRole"
+          },
+          {
+            "name": "UsersPermissionsPermission"
+          },
+          {
+            "name": "UsersPermissionsRole"
+          },
+          {
+            "name": "UsersPermissionsRoleAggregator"
+          },
+          {
+            "name": "UsersPermissionsRoleConnection"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionDescription"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionId"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionName"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionType"
+          },
+          {
+            "name": "UsersPermissionsRoleGroupBy"
+          },
+          {
+            "name": "UsersPermissionsUser"
+          },
+          {
+            "name": "UsersPermissionsUserAggregator"
+          },
+          {
+            "name": "UsersPermissionsUserConnection"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionBlocked"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionConfirmed"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionCreated_at"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionEmail"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionId"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionProvider"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionRole"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionUpdated_at"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionUsername"
+          },
+          {
+            "name": "UsersPermissionsUserGroupBy"
+          },
+          {
+            "name": "createAirlinePayload"
+          },
+          {
+            "name": "createAirportPayload"
+          },
+          {
+            "name": "createFlightClassPayload"
+          },
+          {
+            "name": "createFlightPayload"
+          },
+          {
+            "name": "createLocationPayload"
+          },
+          {
+            "name": "createLoungePayload"
+          },
+          {
+            "name": "createMenuItemCategoryPayload"
+          },
+          {
+            "name": "createMenuItemPayload"
+          },
+          {
+            "name": "createPostPayload"
+          },
+          {
+            "name": "createRolePayload"
+          },
+          {
+            "name": "createUserPayload"
+          },
+          {
+            "name": "deleteAirlinePayload"
+          },
+          {
+            "name": "deleteAirportPayload"
+          },
+          {
+            "name": "deleteFilePayload"
+          },
+          {
+            "name": "deleteFlightClassPayload"
+          },
+          {
+            "name": "deleteFlightPayload"
+          },
+          {
+            "name": "deleteHeaderPayload"
+          },
+          {
+            "name": "deleteLocationPayload"
+          },
+          {
+            "name": "deleteLoungePayload"
+          },
+          {
+            "name": "deleteMenuItemCategoryPayload"
+          },
+          {
+            "name": "deleteMenuItemPayload"
+          },
+          {
+            "name": "deletePostPayload"
+          },
+          {
+            "name": "deleteRolePayload"
+          },
+          {
+            "name": "deleteUserPayload"
+          },
+          {
+            "name": "updateAirlinePayload"
+          },
+          {
+            "name": "updateAirportPayload"
+          },
+          {
+            "name": "updateFlightClassPayload"
+          },
+          {
+            "name": "updateFlightPayload"
+          },
+          {
+            "name": "updateHeaderPayload"
+          },
+          {
+            "name": "updateLocationPayload"
+          },
+          {
+            "name": "updateLoungePayload"
+          },
+          {
+            "name": "updateMenuItemCategoryPayload"
+          },
+          {
+            "name": "updateMenuItemPayload"
+          },
+          {
+            "name": "updatePostPayload"
+          },
+          {
+            "name": "updateRolePayload"
+          },
+          {
+            "name": "updateUserPayload"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "PostsContentDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentPostCarousel"
+          },
+          {
+            "name": "ComponentPostContentBlock"
+          }
+        ]
+      }
+    ]
+  }
+}

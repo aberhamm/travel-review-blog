@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import PostCard from '~/components/PostCard';
+const PostCard = () => import('~/components/PostCard');
+
 export default {
     name: 'PostCardGrid',
     components: {

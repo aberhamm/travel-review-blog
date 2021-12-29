@@ -19,13 +19,23 @@
             <base-image
                 v-if="post.featured_image"
                 class="white--text text-right"
-                height="200px"
+                height="300px"
                 :src="post.featured_image.url" />
         </v-container>
-        <v-container>
-            <v-row class="mt-4">
-                <v-col cols="12" md="8" offset-md="2">
-                    <div v-if="post.content" class="text-body-1" v-html="$md.render(post.content)"></div>
+        <v-container class="pa-0">
+            <v-row class="ma-0 mt-4">
+                <v-col
+                    class="pa-0"
+                    cols="12"
+                    lg="8"
+                    offset-lg="2">
+                    <template v-for="(zone, i) in post.content">
+                        <image-grid
+                            v-if="zone.__typename == 'ComponentPostCarousel'"
+                            :key="i"
+                            :images="zone.images" />
+                    </template>
+                    <!-- <div v-if="post.content" class="text-body-1" v-html="$md.render(post.content)"></div> -->
                 </v-col>
             </v-row>
         </v-container>
@@ -33,9 +43,13 @@
 </template>
 
 <script>
+const ImageGrid = () => import('~/components/ImageGrid');
 import postsQuery from '~/apollo/queries/post/post';
 
 export default {
+    components: {
+        ImageGrid
+    },
     data: () => ({
         post: {},
         breadcrumbs: [{ text: 'Home', nuxt: true, to: '/' }, { text: 'Post', disabled: true, nuxt: true, to: '/' }]

@@ -4,7 +4,22 @@ query Posts($slug: String!) {
         slug
         title
         subtitle
-        # content
+        content {
+      		... on ComponentPostContentBlock {
+        		__typename
+        		Content
+      		}
+        	... on ComponentPostCarousel {
+		        __typename
+        		caption
+        		images {
+          		... on UploadFile {
+                      url
+                      previewUrl
+                  }
+        		}
+      		}
+    	}
         featured_image {
             url
         }

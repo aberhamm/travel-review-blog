@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_post_carousels",
+  "info": {
+    "name": "Carousel",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "caption": {
+      "type": "text"
+    }
+  }
+}

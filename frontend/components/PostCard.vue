@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import BaseImage from '~/components/base/Image';
+const BaseImage = () => import('~/components/base/Image');
 
 export default {
     name: 'PostCard',

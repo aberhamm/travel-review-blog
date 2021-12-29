@@ -29,8 +29,8 @@ export default {
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        titleTemplate: '%s - economy anxiety',
-        title: 'economy anxiety - reviews for airlines, business class, lounge, hotels and more.',
+        titleTemplate: '%s - economy anxiety - reviews for airlines, business class, lounge, hotels and more.',
+        title: 'Home',
         htmlAttrs: {
             lang: 'en',
         },
@@ -86,9 +86,7 @@ export default {
 
     apollo: {
         clientConfigs: {
-            default: {
-                httpEndpoint: strapiBaseUri + '/graphql'
-            },
+            default: '~/plugins/apollo.config.js'
         },
         /**
          * default 'apollo' definition

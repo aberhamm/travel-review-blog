@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_post_content_blocks",
+  "info": {
+    "name": "Content Block",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -6,6 +6,7 @@
     "develop": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "generate-gql": "graphql-codegen",
     "generate": "nuxt generate",
     "test": "jest"
   },
@@ -18,11 +19,14 @@
     "graphql": "^16.0.1",
     "nuxt": "^2.15.7",
     "vue": "^2.6.6",
+    "vue-cool-lightbox": "^2.7.4",
     "vue-server-renderer": "^2.6.6",
     "vue-template-compiler": "^2.6.6",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/fragment-matcher": "^3.2.0",
     "@nuxtjs/vuetify": "^1.12.1",
     "@vue/test-utils": "^1.2.1",
     "babel-core": "7.0.0-bridge.0",
