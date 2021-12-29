@@ -55,6 +55,13 @@
         "Lounge"
       ],
       "required": false
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "post.carousel",
+        "post.content-block"
+      ]
     }
   }
 }
