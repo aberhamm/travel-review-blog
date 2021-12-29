@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "menu_item_categories",
+  "collectionName": "menus",
   "info": {
-    "name": "menu_item_category"
+    "name": "menu",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,13 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
+    "flight": {
+      "model": "flight"
+    },
+    "lounge": {
+      "model": "lounge"
     },
     "menu_items": {
-      "via": "menu_item_categories",
+      "via": "menus",
       "collection": "menu-item"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

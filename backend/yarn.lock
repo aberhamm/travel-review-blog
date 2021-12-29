@@ -10509,6 +10509,11 @@ strapi-plugin-i18n@3.6.8:
     pluralize "8.0.0"
     strapi-utils "3.6.8"
 
+strapi-plugin-migrate@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-migrate/-/strapi-plugin-migrate-3.6.3.tgz#13edae75ec3af078a131f7c007e10e17449e2e98"
+  integrity sha512-MvHyDpWrQthG+EDUQajcolLfvaBDPv48Q90bG/vo24/rh66sTW+XOssmg+dwtapKhE0uPfylFrrdE0ACI/mUJA==
+
 strapi-plugin-upload@3.6.8:
   version "3.6.8"
   resolved "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.6.8.tgz"

@@ -62,6 +62,9 @@
         "post.carousel",
         "post.content-block"
       ]
+    },
+    "airline": {
+      "model": "airline"
     }
   }
 }

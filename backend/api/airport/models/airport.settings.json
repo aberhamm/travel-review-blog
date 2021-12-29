@@ -26,10 +26,6 @@
     "location": {
       "via": "airports",
       "model": "location"
-    },
-    "flights": {
-      "via": "destination",
-      "collection": "flight"
     }
   }
 }
