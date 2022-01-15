@@ -18,13 +18,13 @@
     "description": {
       "type": "text"
     },
-    "menus": {
-      "via": "menu_items",
-      "collection": "menu",
-      "dominant": true
-    },
     "menu_item_categories": {
       "collection": "menu-item-category",
+      "via": "menu_items",
+      "dominant": true
+    },
+    "menus": {
+      "collection": "menu",
       "via": "menu_items",
       "dominant": true
     }

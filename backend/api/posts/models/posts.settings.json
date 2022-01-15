@@ -60,7 +60,8 @@
       "type": "dynamiczone",
       "components": [
         "post.carousel",
-        "post.content-block"
+        "post.content-block",
+        "menu.menu"
       ]
     },
     "airline": {

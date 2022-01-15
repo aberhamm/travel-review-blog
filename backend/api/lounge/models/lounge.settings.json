@@ -15,12 +15,14 @@
     "name": {
       "type": "string"
     },
-    "airport": {
-      "model": "airport",
-      "via": "lounges"
-    },
     "terminal": {
       "type": "string"
+    },
+    "airport": {
+      "model": "airport"
+    },
+    "airline": {
+      "model": "airline"
     }
   }
 }

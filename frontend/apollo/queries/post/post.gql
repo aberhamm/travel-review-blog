@@ -7,7 +7,7 @@ query Posts($slug: String!) {
         content {
       		... on ComponentPostContentBlock {
         		__typename
-        		Content
+        		content
       		}
         	... on ComponentPostCarousel {
 		        __typename
@@ -19,6 +19,18 @@ query Posts($slug: String!) {
                   }
         		}
       		}
+            ... on ComponentMenuMenu {
+                __typename,
+                menu {
+          			id
+                    name
+                    menu_items {
+            			id
+                        name
+                        description
+                    }
+                }
+            }
     	}
         featured_image {
             url

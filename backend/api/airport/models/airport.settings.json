@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "airports",
   "info": {
-    "name": "Airport"
+    "name": "Airport",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,10 +19,6 @@
     },
     "name": {
       "type": "string"
-    },
-    "lounges": {
-      "via": "airport",
-      "collection": "lounge"
     },
     "location": {
       "via": "airports",

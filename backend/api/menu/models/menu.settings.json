@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "menus",
   "info": {
-    "name": "menu",
-    "description": ""
+    "name": "Menu"
   },
   "options": {
     "increments": true,
@@ -12,6 +11,9 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "name": {
+      "type": "string"
+    },
     "flight": {
       "model": "flight"
     },
@@ -21,9 +23,6 @@
     "menu_items": {
       "via": "menus",
       "collection": "menu-item"
-    },
-    "title": {
-      "type": "string"
     }
   }
 }

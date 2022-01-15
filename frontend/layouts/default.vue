@@ -6,7 +6,7 @@
             color="transparent"
             :absolute="true"
             :elevation="0">
-            <logo>{{ header.title }}</logo>
+            <logo v-if="!isHomePage">{{ header.title }}</logo>
             <v-spacer />
             <div class="d-none d-sm-flex flex-0-1-auto align-center justify-end ">
                 <template v-for="(link, i) in header.navigation_links">
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo';
+const Logo = () => import('~/components/Logo');
 import headerQuery from '~/apollo/queries/content/header';
 export default {
     components: {
@@ -52,6 +52,11 @@ export default {
             query: headerQuery,
         },
     },
+    computed: {
+        isHomePage () {
+            return this.$route.path == '/';
+        }
+    }
 };
 </script>
 <style lang="scss" scoped>

@@ -10,7 +10,7 @@
                     </div>
 
                     <div class="text-overline text-center mt-4">
-                        {{ $moment(post.published_at).format("MMMM DD YYYY") }}
+                        {{ $moment(post.published_at).format('MMMM DD YYYY') }}
                     </div>
                 </v-col>
             </v-row>
@@ -23,19 +23,18 @@
                 :src="post.featured_image.url" />
         </v-container>
         <v-container class="pa-0">
-            <v-row class="ma-0 mt-4">
+            <v-row
+                v-for="(zone, i) in post.content"
+                :key="i"
+                class="ma-0 mt-4">
                 <v-col
                     class="pa-0"
                     cols="12"
                     lg="8"
                     offset-lg="2">
-                    <template v-for="(zone, i) in post.content">
-                        <image-grid
-                            v-if="zone.__typename == 'ComponentPostCarousel'"
-                            :key="i"
-                            :images="zone.images" />
-                    </template>
-                    <!-- <div v-if="post.content" class="text-body-1" v-html="$md.render(post.content)"></div> -->
+                    <strapi-component
+                        :typename="zone.__typename"
+                        v-bind="zone" />
                 </v-col>
             </v-row>
         </v-container>
@@ -43,16 +42,26 @@
 </template>
 
 <script>
-const ImageGrid = () => import('~/components/ImageGrid');
+const ImageGrid = () => import(
+    /* webpackChunkName: "ImageGrid" */
+    '~/components/ImageGrid');
+const StrapiComponent = () => import(
+    /* webpackChunkName: "StrapiComponent" */
+    '~/components/StrapiComponent');
+
 import postsQuery from '~/apollo/queries/post/post';
 
 export default {
     components: {
-        ImageGrid
+        ImageGrid,
+        StrapiComponent,
     },
     data: () => ({
         post: {},
-        breadcrumbs: [{ text: 'Home', nuxt: true, to: '/' }, { text: 'Post', disabled: true, nuxt: true, to: '/' }]
+        breadcrumbs: [
+            { text: 'Home', nuxt: true, to: '/' },
+            { text: 'Post', disabled: true, nuxt: true, to: '/' },
+        ],
     }),
     apollo: {
         post: {
@@ -61,11 +70,23 @@ export default {
             variables() {
                 return { slug: this.$route.params.post };
             },
-            update: ({ posts }) => posts[0]
+            update: ({ posts }) => posts[0],
         },
+    },
+    head() {
+        return {
+            title: this.post.title,
+            meta: [
+                // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'My custom description',
+                },
+            ],
+        };
     },
 };
 </script>
 <style scoped>
-
 </style>

@@ -21,8 +21,8 @@
       "type": "string"
     },
     "airports": {
-      "collection": "airport",
-      "via": "location"
+      "via": "location",
+      "collection": "airport"
     }
   }
 }
