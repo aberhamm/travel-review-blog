@@ -6,7 +6,7 @@
     "develop": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate-gql": "graphql-codegen",
+    "generate-gql": "graphql-codegen --config ./gql-schema-gen.yml",
     "generate": "nuxt generate",
     "test": "jest"
   },

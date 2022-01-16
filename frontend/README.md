@@ -6,6 +6,9 @@
 # install dependencies
 $ npm install
 
+# Dynamic Zones are of type union and each component has its own type with the corresponding data available inside of that. The default heuristic fragment matcher that comes with Apollo client will not work accurately when using fragments with unions and because of this, you need to use the IntrospectionFragmentMatcher.
+$ npm run generate-gql
+
 # serve with hot reload at localhost:3000
 $ npm run develop
 

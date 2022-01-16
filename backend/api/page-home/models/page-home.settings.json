@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_homes",
+  "info": {
+    "name": "page_home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dynamic_zone": {
+      "type": "dynamiczone",
+      "components": [
+        "hero.hero"
+      ]
+    }
+  }
+}

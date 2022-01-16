@@ -3,7 +3,7 @@ import {
     InMemoryCache,
 } from 'apollo-cache-inmemory';
 
-import introspectionQueryResultData from '~/graphql-introspection.json';
+import introspectionQueryResultData from '~/data/graphql-introspection.json';
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
     introspectionQueryResultData,

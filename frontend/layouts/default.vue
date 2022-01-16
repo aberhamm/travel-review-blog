@@ -23,7 +23,6 @@
                     </NuxtLink>
                 </template>
             </div>
-            <v-app-bar-nav-icon class="d-sm-none" />
         </v-app-bar>
         <v-main class="pb-5">
             <Nuxt />

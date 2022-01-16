@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_components_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "h-square",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "center"
+      ],
+      "default": "center",
+      "required": true
+    },
+    "subtitle": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

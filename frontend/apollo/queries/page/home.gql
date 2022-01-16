@@ -1,0 +1,12 @@
+query PageHome {
+    pageHome {
+    	dynamic_zone {
+      		... on ComponentHeroHero {
+        		__typename
+        		heading
+        		subtitle
+        		alignment
+      		}
+    	}
+  	}
+}

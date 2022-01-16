@@ -56,13 +56,15 @@ export default {
         ImageGrid,
         StrapiComponent,
     },
-    data: () => ({
-        post: {},
-        breadcrumbs: [
-            { text: 'Home', nuxt: true, to: '/' },
-            { text: 'Post', disabled: true, nuxt: true, to: '/' },
-        ],
-    }),
+    data () {
+        return {
+            post: {},
+            breadcrumbs: [
+                { text: 'Home', nuxt: true, to: '/' },
+                { text: 'Post', disabled: true, nuxt: true, to: '/' },
+            ],
+        }
+    },
     apollo: {
         post: {
             prefetch: true,

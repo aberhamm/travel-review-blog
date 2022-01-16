@@ -1,32 +1,53 @@
 <template>
     <v-container fluid>
-        <div class="mt-sm-3 py-6 d-flex flex-column align-center text-center">
-            <logo class="text-h4 text-sm-h2">/ economy anxiety /</logo>
-            <v-col sm="10" md="8" class="text-body-1 pa-0 mt-6">
-                An abnormal and persistent fear of flying in economy. Sufferers experience severe anxiety even though they usually realize that economy class does not pose a threat commensurate with their fear.
-            </v-col>
-        </div>
+        <div
+            v-for="(zone, i) in pageContent.dynamic_zone"
+            :key="i">
+            <strapi-component
+                :typename="zone.__typename"
+                v-bind="zone" />
+            </div>
         <div class="mt-6">
             <post-card-grid v-if="posts.length" :posts="posts" />
         </div>
     </v-container>
 </template>
+
 <script>
-const Logo = () => import('~/components/Logo');
-import PostCardGrid from '~/components/PostCardGrid';
+const Logo = () => import(
+    /* webpackChunkName: "Logo" */
+    '~/components/Logo');
+const PostCardGrid = () => import(
+    /* webpackChunkName: "PostCardGrid" */
+    '~/components/PostCardGrid');
+const StrapiComponent = () => import(
+    /* webpackChunkName: "StrapiComponent" */
+    '~/components/StrapiComponent');
+
+import homePageQuery from '~/apollo/queries/page/home';
 import postsQuery from '~/apollo/queries/post/posts';
 
 export default {
-    components: { Logo, PostCardGrid },
+    components: {
+        Logo,
+        PostCardGrid,
+        StrapiComponent
+    },
     data() {
         return {
             posts: [],
+            pageContent: {}
         };
     },
     apollo: {
         posts: {
             prefetch: true,
             query: postsQuery,
+        },
+        pageContent: {
+            prefetch: true,
+            query: homePageQuery,
+            update: ({ pageHome }) => pageHome,
         },
     },
 };

@@ -2,6 +2,6 @@ schema: "http://127.0.0.1:8082/graphql"
 config:
   apolloClientVersion: 2
 generates:
-  ./graphql-introspection.json:
+  ./data/graphql-introspection.json:
     plugins:
       - "fragment-matcher"

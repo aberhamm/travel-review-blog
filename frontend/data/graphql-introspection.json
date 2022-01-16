@@ -69,6 +69,9 @@
             "name": "AirportGroupBy"
           },
           {
+            "name": "ComponentMenuMenu"
+          },
+          {
             "name": "ComponentPostCarousel"
           },
           {
@@ -111,16 +114,25 @@
             "name": "FlightConnection"
           },
           {
+            "name": "FlightConnectionAirline"
+          },
+          {
             "name": "FlightConnectionCreated_at"
           },
           {
-            "name": "FlightConnectionDestination"
+            "name": "FlightConnectionDate"
+          },
+          {
+            "name": "FlightConnectionDestination_airport"
+          },
+          {
+            "name": "FlightConnectionFlight_class"
           },
           {
             "name": "FlightConnectionId"
           },
           {
-            "name": "FlightConnectionOrigin"
+            "name": "FlightConnectionOrigin_airport"
           },
           {
             "name": "FlightConnectionPublished_at"
@@ -183,6 +195,9 @@
             "name": "LoungeConnection"
           },
           {
+            "name": "LoungeConnectionAirline"
+          },
+          {
             "name": "LoungeConnectionAirport"
           },
           {
@@ -205,6 +220,39 @@
           },
           {
             "name": "LoungeGroupBy"
+          },
+          {
+            "name": "Menu"
+          },
+          {
+            "name": "MenuAggregator"
+          },
+          {
+            "name": "MenuConnection"
+          },
+          {
+            "name": "MenuConnectionCreated_at"
+          },
+          {
+            "name": "MenuConnectionFlight"
+          },
+          {
+            "name": "MenuConnectionId"
+          },
+          {
+            "name": "MenuConnectionLounge"
+          },
+          {
+            "name": "MenuConnectionName"
+          },
+          {
+            "name": "MenuConnectionPublished_at"
+          },
+          {
+            "name": "MenuConnectionUpdated_at"
+          },
+          {
+            "name": "MenuGroupBy"
           },
           {
             "name": "MenuItem"
@@ -246,6 +294,12 @@
             "name": "MenuItemConnectionCreated_at"
           },
           {
+            "name": "MenuItemConnectionDescription"
+          },
+          {
+            "name": "MenuItemConnectionDisplay_name"
+          },
+          {
             "name": "MenuItemConnectionId"
           },
           {
@@ -253,6 +307,9 @@
           },
           {
             "name": "MenuItemConnectionPublished_at"
+          },
+          {
+            "name": "MenuItemConnectionRetail_value"
           },
           {
             "name": "MenuItemConnectionUpdated_at"
@@ -268,6 +325,9 @@
           },
           {
             "name": "PostsConnection"
+          },
+          {
+            "name": "PostsConnectionAirline"
           },
           {
             "name": "PostsConnectionCategory"
@@ -483,6 +543,9 @@
             "name": "createMenuItemPayload"
           },
           {
+            "name": "createMenuPayload"
+          },
+          {
             "name": "createPostPayload"
           },
           {
@@ -522,6 +585,9 @@
             "name": "deleteMenuItemPayload"
           },
           {
+            "name": "deleteMenuPayload"
+          },
+          {
             "name": "deletePostPayload"
           },
           {
@@ -558,6 +624,9 @@
             "name": "updateMenuItemPayload"
           },
           {
+            "name": "updateMenuPayload"
+          },
+          {
             "name": "updatePostPayload"
           },
           {
@@ -572,6 +641,9 @@
         "kind": "UNION",
         "name": "PostsContentDynamicZone",
         "possibleTypes": [
+          {
+            "name": "ComponentMenuMenu"
+          },
           {
             "name": "ComponentPostCarousel"
           },
