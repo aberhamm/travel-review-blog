@@ -1,5 +1,10 @@
 <template>
     <v-card class="mx-auto">
+        <v-toolbar color="white" flat>
+            <v-toolbar-title class="grey--text text--darken-4">
+                {{ menu.name }}
+            </v-toolbar-title>
+        </v-toolbar>
         <v-list-item
             v-for="item in menu.menu_items"
             :key="item.id"

@@ -25,9 +25,10 @@
             </div>
             <v-app-bar-nav-icon class="d-sm-none" />
         </v-app-bar>
-        <v-main>
+        <v-main class="pb-5">
             <Nuxt />
         </v-main>
+        <v-spacer class="py-6" />
         <v-footer app :absolute="true">
             <span>&copy; {{ new Date().getFullYear() }}</span>
         </v-footer>
