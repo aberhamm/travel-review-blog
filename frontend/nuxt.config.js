@@ -1,8 +1,8 @@
 import redirectMiddleware from './server-middleware/redirect';
 
-console.log(process.env.API_URL)
 const strapiBaseUri = process.env.API_URL || 'http://localhost:8082';
 const isProd = process.env.NODE_ENV === 'production';
+console.log({ strapiBaseUri, isProd });
 
 export default {
     target: 'static',
