@@ -11,7 +11,7 @@ const fragmentMatcher = new IntrospectionFragmentMatcher({
 
 export default (_context) => {
     return {
-        httpEndpoint: `${(process.env.API_URL || 'http://localhost:8082')}/graphql`,
+        httpEndpoint: `${process.env.strapiBaseUri}/graphql`,
         cache: new InMemoryCache({ fragmentMatcher }),
     };
 }
