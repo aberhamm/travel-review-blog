@@ -22,7 +22,9 @@
                 height="300px"
                 :src="post.featured_image.url" />
         </v-container>
-        <v-container class="pa-0">
+        <v-container
+            v-if="post.content"
+            class="pa-0">
             <v-row
                 v-for="(zone, i) in post.content"
                 :key="i"

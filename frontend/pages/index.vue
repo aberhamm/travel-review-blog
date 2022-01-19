@@ -1,12 +1,14 @@
 <template>
     <v-container fluid>
-        <div
-            v-for="(zone, i) in pageContent.dynamic_zone"
-            :key="i">
-            <strapi-component
-                :typename="zone.__typename"
-                v-bind="zone" />
+        <template v-if="pageContent.dynamic_zone">
+            <div
+                v-for="(zone, i) in pageContent.dynamic_zone"
+                :key="i">
+                <strapi-component
+                    :typename="zone.__typename"
+                    v-bind="zone" />
             </div>
+        </template>
         <div class="mt-6">
             <post-card-grid v-if="posts.length" :posts="posts" />
         </div>
