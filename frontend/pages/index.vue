@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <template v-if="pageContent.dynamic_zone">
+        <template v-if="pageContent && pageContent.dynamic_zone">
             <div
                 v-for="(zone, i) in pageContent.dynamic_zone"
                 :key="i">
