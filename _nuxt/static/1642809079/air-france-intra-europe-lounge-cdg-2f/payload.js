@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/air-france-intra-europe-lounge-cdg-2f", {data:[{}],fetch:{},mutations:void 0});
