@@ -2,12 +2,16 @@
   "collectionName": "components_post_content_blocks",
   "info": {
     "name": "Content Block",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "content": {
       "type": "richtext"
+    },
+    "header": {
+      "type": "string"
     }
   }
 }

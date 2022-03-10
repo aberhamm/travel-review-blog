@@ -1,7 +1,7 @@
 <template>
     <v-card class="mx-auto">
         <v-toolbar color="white" flat>
-            <v-toolbar-title class="grey--text text--darken-4">
+            <v-toolbar-title class="grey--text text--darken-4 text-h5 font-weight-medium">
                 {{ menu.name }}
             </v-toolbar-title>
         </v-toolbar>
