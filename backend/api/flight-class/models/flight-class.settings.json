@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "flight_classes",
   "info": {
-    "name": "flight_class"
+    "name": "flight_class",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

@@ -1,0 +1,28 @@
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Environment variables (secrets)
+.env
+.env.*
+!.env.example
+
+# Build outputs
+backend/build/
+frontend/dist/
+frontend/.nuxt/
+
+# Strapi exports (local data dumps)
+backend/exports/
+
+# Generated files
+frontend/gql/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+*.swp

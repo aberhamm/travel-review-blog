@@ -61,7 +61,8 @@
       "components": [
         "post.carousel",
         "post.content-block",
-        "menu.menu"
+        "menu.menu",
+        "menu.menu-test"
       ]
     },
     "airline": {

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entities",
+  "info": {
+    "name": "Entity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "services": {
+      "via": "entity",
+      "collection": "service"
+    }
+  }
+}

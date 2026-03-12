@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "name": "Service",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "primary_airport": {
+      "model": "airport"
+    },
+    "secondary_airport": {
+      "model": "airport"
+    },
+    "entity": {
+      "via": "services",
+      "model": "entity"
+    }
+  }
+}

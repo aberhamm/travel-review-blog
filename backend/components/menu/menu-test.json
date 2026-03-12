@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_menu_menu_tests",
+  "info": {
+    "name": "Menu Test",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "menu_items": {
+      "collection": "menu-item"
+    }
+  }
+}
